@@ -2,9 +2,10 @@
 
 // TODO: add theme mixins
 // blue/white
-$foreground: rgb(212, 249, 250);
+$foreground: rgb(224, 125, 11); //rgb(212, 249, 250);
 $background: rgb(0, 12, 12);
 $alert: rgb(255, 60, 0);
+$emphasis : rgb(243, 149, 87);
 
 // amber
 // $foreground: rgb(224, 125, 11);
@@ -27,5 +28,6 @@ $scanlines-background: rgba($background, 0.5);
 $foreground-glow: 0 0 5px rgba($foreground, 0.5);
 $background-glow: 0 0 2px rgba($background, 0.5);
 $alert-glow: 0 0 5px rgba($alert, 0.5);
+$emphasis-glow: 0 0 5px rgba($emphasis, 0.5);
 
 $background-gradient: radial-gradient(rgba($foreground, 0.15), rgba($background, 1) 100%)

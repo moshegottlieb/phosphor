@@ -19,7 +19,7 @@ import Scanlines from "../Scanlines";
 
 // for different content, edit sample.json, or,
 // preferrably, create a new JSON and load it here
-import json from "../../data/sample.json";
+import json from "../../data/sharkfood.json";
 
 interface AppState {
     screens: Screen[];
@@ -60,6 +60,7 @@ enum ScreenDataType {
     Bitmap,
     Prompt,
     Toggle,
+    Href,
 }
 
 enum ScreenDataState {
@@ -373,9 +374,11 @@ class Phosphor extends Component<any, AppState> {
                     text: element.text,
                     className: element.className,
                     state,
+                    speed: element.speed,
                     onLoad,
                 }
 
+            case "href":
             case "link":
                 return {
                     id,
@@ -384,8 +387,10 @@ class Phosphor extends Component<any, AppState> {
                     className: element.className,
                     text: element.text,
                     state,
+                    speed: element.speed,
                     onLoad,
                 };
+            
 
             case "image":
             case "bitmap":
@@ -396,6 +401,7 @@ class Phosphor extends Component<any, AppState> {
                     alt: element.alt,
                     className: element.className,
                     state,
+                    speed: element.speed,
                     onLoad,
                 };
 
@@ -407,6 +413,7 @@ class Phosphor extends Component<any, AppState> {
                     className: element.className,
                     commands: element.commands,
                     state,
+                    speed: element.speed,
                     onLoad,
                 };
 
@@ -415,6 +422,7 @@ class Phosphor extends Component<any, AppState> {
                     id,
                     type: ScreenDataType.Toggle,
                     states: element.states,
+                    speed: element.speed,
                     state,
                 };
 
@@ -452,6 +460,7 @@ class Phosphor extends Component<any, AppState> {
                     onNewLine={this._handleTeletypeNewLine}
                     autocomplete={false}
                     className={element.className}
+                    speed={element.speed}
                 />
             );
         }
@@ -758,6 +767,10 @@ class Phosphor extends Component<any, AppState> {
 
             if (linkTarget.type === "link") {
                 this._changeScreen(linkTarget.target);
+                return;
+            }
+            if (linkTarget.type === "href"){
+                window.open(linkTarget.target)
                 return;
             }
         }

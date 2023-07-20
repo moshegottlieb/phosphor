@@ -1,0 +1,468 @@
+{
+    "config": {
+        "name": "Sharkfood",
+        "author": "Moshe Gottlieb",
+        "comment": "Sharkfood website, built with the wonderful Phosphor project, based on https://github.com/redhg/phosphor"
+    },
+    "screens": [
+        {
+            "id": "menu",
+            "type": "screen",
+            "content": [
+                {
+                    "text" : "SHARKFOOD.COM",
+                    "className" : "title",
+                    "type": "text"
+                },
+                "",
+                {
+                    "type": "bitmap",
+                    "src": "img/sense_logo.png",
+                    "className": "lighten"
+                },
+                "",
+                "Welcome to Sharkfood!",
+                "",
+                {
+                    "text": "▹ ABOUT",
+                    "type": "link",
+                    "target": "about"
+                },
+                {
+                    "text": "▹ APPS",
+                    "type": "link",
+                    "target": "apps"
+                },
+                {
+                    "text": "▹ CONTACT",
+                    "type": "link",
+                    "target": "contact"
+                },
+                {
+                    "text" : "▹ CREDITS",
+                    "type" : "link",
+                    "target": [
+                        {
+                            "target" : "credits",
+                            "type": "dialog",
+                            "shiftKey" : false
+                        }
+                    ]
+                },
+                {
+                    "text" : "▹ PRIVACY POLICY",
+                    "type" : "link",
+                    "target": [
+                        {
+                            "target" : "privacy-policy",
+                            "type": "link",
+                            "shiftKey" : false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id" : "privacy-policy",
+            "type" : "screen",
+            "content": [
+                {
+                    "text" : "PRIVACY POLICY",
+                    "type" : "text",
+                    "className" : "title"
+                },
+                "",
+                {
+                    "text": "◃ BACK",
+                    "type": "link",
+                    "target": "menu"
+                },
+                "",
+                {
+                    "text": "- This website will not track you",
+                    "type" : "text"
+                },
+                "- This website does not retain any personal information about users",
+                "- We don't use cookies of any kind, this website is crumb free",
+                "- There are no third party trackers, analytics, or other online services used with this website",
+                "- The website is hosted using Amazon’s AWS technologies, which as far as we know - does not track you",
+                "- The information in contact forms will be transmitted as is, and will be used for your contact reason only",
+                "- This privacy policy was written by a human who cares about privacy",
+                "",
+                {
+                    "text": "◃ BACK",
+                    "type": "link",
+                    "target": "menu"
+                } 
+            ]
+        },
+        {
+            "id": "about",
+            "type": "screen",
+            "content": [
+                {
+                    "text" : "ABOUT SHARKFOOD",
+                    "type" : "text",
+                    "className" : "title"
+                },
+                "",
+                {
+                    "type": "bitmap",
+                    "src": "img/sense_logo.png",
+                    "className": "lighten"
+                },
+                {
+                    "text": "◃ BACK",
+                    "target": "menu",
+                    "type": "link"
+                },
+                "",
+                "I've started Sharkfood in 2010, as a software development business.",
+                "Over the years I've been developing many interesting projects, some secret, some public :-)",
+                "Most of the projects are for iOS, but also:",
+                "Full solutions: iOS, web frontend, and Android, as well as custom C++ projects.",
+                "",
+                "From instant messaging using the Signal end to end encryption protocol, to retail apps.",
+                "Located in Berlin since 2019.",
+                "",
+                {
+                    "text": "◃ BACK",
+                    "target": "menu",
+                    "type": "link"
+                }
+            ]
+        },
+        {
+            "id": "apps",
+            "type": "screen",
+            "content": [
+                {
+                    "text" : "APPS",
+                    "type" : "text",
+                    "className" : "title"
+                },
+                "",
+                {
+                    "text": "◃ BACK",
+                    "target": "menu",
+                    "type": "link"
+                },
+                "",
+                "A very partial list of apps developed by Sharkfood",
+                "",
+                {
+                    "type": "bitmap",
+                    "src": "img/apps/fooducate-thumb.jpg",
+                    "className": "lighten"
+                },
+                {
+                    "text": "▹ FOODUCATE",
+                    "target": "fooducate",
+                    "type": "link"
+                },
+                "",
+                {
+                    "type": "bitmap",
+                    "src": "img/apps/instanttalk-thumb.jpg",
+                    "className": "lighten"
+                },
+                {
+                    "text": "▹ INSTANT TALK",
+                    "target": "instanttalk",
+                    "type": "link"
+                },
+                "",
+                {
+                    "type": "bitmap",
+                    "src": "img/apps/clalit-thumb.jpg",
+                    "className": "lighten"
+                },
+                {
+                    "text": "▹ CLALIT CHILD DEVELOPMENT",
+                    "target": "clalit",
+                    "type": "link"
+                },
+                "",
+                {
+                    "text": "◃ BACK",
+                    "target": "menu",
+                    "type": "link"
+                }
+            ]
+        },
+        {
+            "id": "contact",
+            "type": "screen",
+            "content": [
+                {
+                    "text" : "CONTACT",
+                    "type" : "text",
+                    "className" : "title"
+                },
+                "",
+                {
+                    "text": "◃ BACK",
+                    "target": "menu",
+                    "type": "link"
+                },
+                "",
+                {
+                    "type": "bitmap",
+                    "src": "img/social/mail.png",
+                    "className": "lighten"
+                },
+                {
+                    "text": "SEND EMAIL",
+                    "target": [{
+                        "target" : "mailto:contact@sharkfood.com?subject=Contact%20Form",
+                        "type": "href",
+                        "shiftKey" : false
+                    }],
+                    "className" : "underline",
+                    "type": "link"
+                },
+                "",
+                {
+                    "type": "bitmap",
+                    "src": "img/social/linkedin.png",
+                    "className": "lighten"
+                },
+                {
+                    "text": "LINKEDIN PROFILE",
+                    "target": [{
+                        "target" : "https://www.linkedin.com/in/moshegottlieb/",
+                        "type": "href",
+                        "shiftKey" : false
+                    }],
+                    "className" : "underline",
+                    "type": "link"
+                },
+                "",
+                {
+                    "type": "bitmap",
+                    "src": "img/social/github.png",
+                    "className": "lighten"
+                },
+                {
+                    "text": "GITHUB PROFILE",
+                    "target": [{
+                        "target" : "https://github.com/moshegottlieb",
+                        "type": "href",
+                        "shiftKey" : false
+                    }],
+                    "className" : "underline",
+                    "type": "link"
+                },
+                "",
+                {
+                    "type": "bitmap",
+                    "src": "img/social/stackoverflow.png",
+                    "className": "lighten"
+                },
+                {
+                    "text": "STACKOVERFLOW PROFILE",
+                    "target": [{
+                        "target" : "https://stackoverflow.com/users/1610530/moshe-gottlieb",
+                        "type": "href",
+                        "shiftKey" : false
+                    }],
+                    "className" : "underline",
+                    "type": "link"
+                },
+                "",
+                {
+                    "text": "◃ BACK",
+                    "target": "menu",
+                    "type": "link"
+                }
+            ]
+        },
+        {
+            "id": "fooducate",
+            "type": "screen",
+            "content": [
+                {
+                    "text" : "FOODUCATE",
+                    "type" : "text",
+                    "className" : "title"
+                },
+                "",
+                {
+                    "type": "bitmap",
+                    "src": "img/apps/fooducate.jpg",
+                    "className": "lighten"
+                },
+                "",
+                {
+                    "text": "◃ APPS",
+                    "target": "apps",
+                    "type": "link"
+                },
+                "",
+                "Fooducate - Eat a little better.",
+                "I've been working on Fooducate from 2010-2022, until it was sold to Maple Media.",
+                "Over the years Fooducate had won awards, and was a constant member of the top 10 apps in the Food & Health category, and was even presented in Apple ads for the iPhone.",
+                "Fooducate is available only in the US AppStore.",
+                "iOS, C++, Swift, Objective C",
+                {
+                    "text": "Fooducate in the AppStore",
+                    "target": [{
+                        "target" : "https://apps.apple.com/us/app/fooducate-nutrition-coach/id398436747?itsct=apps_box_link&itscg=30200",
+                        "type": "href",
+                        "shiftKey" : false
+                    }],
+                    "type": "link",
+                    "className" : "underline"
+                },
+                "",
+                {
+                    "text": "◃ APPS",
+                    "target": "apps",
+                    "type": "link"
+                }
+            ]
+        },
+        {
+            "id": "fooducate",
+            "type": "screen",
+            "content": [
+                {
+                    "text" : "FOODUCATE",
+                    "type" : "text",
+                    "className" : "title"
+                },
+                "",
+                {
+                    "type": "bitmap",
+                    "src": "img/apps/fooducate.jpg",
+                    "className": "lighten"
+                },
+                "",
+                {
+                    "text": "◃ APPS",
+                    "target": "apps",
+                    "type": "link"
+                },
+                "",
+                "Fooducate - Eat a little better.",
+                "I've been working on Fooducate from 2010-2022, until it was sold to Maple Media.",
+                "Over the years Fooducate had won awards, and was a constant member of the top 10 apps in the Food & Health category, and was even presented in Apple ads for the iPhone.",
+                "Fooducate is available only in the US AppStore.",
+                "iOS, C++, Swift, Objective C",
+                {
+                    "text": "Fooducate in the AppStore",
+                    "target": [{
+                        "target" : "https://apps.apple.com/us/app/fooducate-nutrition-coach/id398436747?itsct=apps_box_link&itscg=30200",
+                        "type": "href",
+                        "shiftKey" : false
+                    }],
+                    "type": "link",
+                    "className" : "underline"
+                },
+                "",
+                {
+                    "text": "◃ APPS",
+                    "target": "apps",
+                    "type": "link"
+                }
+            ]
+        },
+        {
+            "id": "instanttalk",
+            "type": "screen",
+            "content": [
+                {
+                    "text" : "INSTANT TALK",
+                    "type" : "text",
+                    "className" : "title"
+                },
+                "",
+                {
+                    "type": "bitmap",
+                    "src": "img/apps/instanttalk.jpg",
+                    "className": "lighten"
+                },
+                "",
+                {
+                    "text": "◃ APPS",
+                    "target": "apps",
+                    "type": "link"
+                },
+                "",
+                "Instant Talk",
+                "Push To Talk client for the IPRS system.",
+                "Built for Mobile Tornado, I started this project and imported code from legacy systems such as BREW and Symbian to iOS.",
+                "Implemented a realtime Push To Talk system with a sub second call setup, and an instant messenger.",
+                "iOS, C/C++, Objective C",
+                {
+                    "text": "Instant Talk in the AppStore",
+                    "target": [{
+                        "target" : "https://apps.apple.com/us/app/instanttalk-ptt/id721180594?itsct=apps_box_link&itscg=30200",
+                        "type": "href",
+                        "shiftKey" : false
+                    }],
+                    "type": "link",
+                    "className" : "underline"
+                },
+                "",
+                {
+                    "text": "◃ APPS",
+                    "target": "apps",
+                    "type": "link"
+                }
+            ]
+        },
+        {
+            "id": "clalit",
+            "type": "screen",
+            "content": [
+                {
+                    "text" : "CLALIT CHILD DEVELOPMENT",
+                    "type" : "text",
+                    "className" : "title"
+                },
+                "",
+                {
+                    "type": "bitmap",
+                    "src": "img/apps/clalit.jpg",
+                    "className": "lighten"
+                },
+                "",
+                {
+                    "text": "◃ APPS",
+                    "target": "apps",
+                    "type": "link"
+                },
+                "",
+                "Clalit Child Development 0-2",
+                "Built for the largest HMO in Israel, Clalit health services.",
+                "The app tracked the development of children ages 0-2, using the steps described by Clalit.",
+                "This project is a joint effort with Yaniv Fridman, and is our unique invention sold to Clalit.",
+                "iOS/Android, Objective C/Java",
+                {
+                    "type": "text",
+                    "className": "alert",
+                    "text": "This project is no longer active"
+                },
+                "",
+                {
+                    "text": "◃ APPS",
+                    "target": "apps",
+                    "type": "link"
+                }
+            ]
+        }
+
+    ],
+    "dialogs": [
+        {
+            "id": "credits",
+            "type": "alert",
+            "content": [
+                "This website is based on the wonderful project `phosphor` by redhg.",
+                "",
+                "https://github.com/redhg/phosphor"
+            ]
+        }
+    ]
+}
