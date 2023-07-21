@@ -29,7 +29,7 @@
                     "target": "about"
                 },
                 {
-                    "text": "▹ APPS",
+                    "text": "▹ PROJECTS",
                     "type": "link",
                     "target": "apps"
                 },
@@ -137,7 +137,7 @@
             "type": "screen",
             "content": [
                 {
-                    "text" : "APPS",
+                    "text" : "PROJECTS",
                     "type" : "text",
                     "className" : "title"
                 },
@@ -148,7 +148,7 @@
                     "type": "link"
                 },
                 "",
-                "A very partial list of apps developed by Sharkfood",
+                "A very partial list of projects developed by Sharkfood",
                 "",
                 {
                     "type": "bitmap",
@@ -174,12 +174,34 @@
                 "",
                 {
                     "type": "bitmap",
+                    "src": "img/apps/firewall-thumb.png",
+                    "className": "lighten"
+                },
+                {
+                    "text": "▹ IPRS FIREWALL",
+                    "target": "iprs-gateway",
+                    "type": "link"
+                },
+                "",
+                {
+                    "type": "bitmap",
                     "src": "img/apps/clalit-thumb.jpg",
                     "className": "lighten"
                 },
                 {
                     "text": "▹ CLALIT CHILD DEVELOPMENT",
                     "target": "clalit",
+                    "type": "link"
+                },
+                "",
+                {
+                    "type": "bitmap",
+                    "src": "img/apps/secret-thumb.png",
+                    "className": "lighten"
+                },
+                {
+                    "text": "▹ TOP SECRET IM",
+                    "target": "secret-im",
                     "type": "link"
                 },
                 "",
@@ -294,7 +316,7 @@
                 },
                 "",
                 {
-                    "text": "◃ APPS",
+                    "text": "◃ PROJECTS",
                     "target": "apps",
                     "type": "link"
                 },
@@ -316,7 +338,7 @@
                 },
                 "",
                 {
-                    "text": "◃ APPS",
+                    "text": "◃ PROJECTS",
                     "target": "apps",
                     "type": "link"
                 }
@@ -339,7 +361,7 @@
                 },
                 "",
                 {
-                    "text": "◃ APPS",
+                    "text": "◃ PROJECTS",
                     "target": "apps",
                     "type": "link"
                 },
@@ -361,7 +383,7 @@
                 },
                 "",
                 {
-                    "text": "◃ APPS",
+                    "text": "◃ PROJECTS",
                     "target": "apps",
                     "type": "link"
                 }
@@ -384,7 +406,7 @@
                 },
                 "",
                 {
-                    "text": "◃ APPS",
+                    "text": "◃ PROJECTS",
                     "target": "apps",
                     "type": "link"
                 },
@@ -406,7 +428,7 @@
                 },
                 "",
                 {
-                    "text": "◃ APPS",
+                    "text": "◃ PROJECTS",
                     "target": "apps",
                     "type": "link"
                 }
@@ -429,7 +451,7 @@
                 },
                 "",
                 {
-                    "text": "◃ APPS",
+                    "text": "◃ PROJECTS",
                     "target": "apps",
                     "type": "link"
                 },
@@ -446,7 +468,81 @@
                 },
                 "",
                 {
-                    "text": "◃ APPS",
+                    "text": "◃ PROJECTS",
+                    "target": "apps",
+                    "type": "link"
+                }
+            ]
+        },
+        {
+            "id": "iprs-gateway",
+            "type": "screen",
+            "content": [
+                {
+                    "text" : "IPRS GATEWAY",
+                    "type" : "text",
+                    "className" : "title"
+                },
+                "",
+                {
+                    "type": "bitmap",
+                    "src": "img/apps/firewall.png",
+                    "className": "lighten"
+                },
+                "",
+                {
+                    "text": "◃ PROJECTS",
+                    "target": "apps",
+                    "type": "link"
+                },
+                "",
+                "IPRS Gateway is a data packet filtering process for Linux, built for Mobile Tornado.",
+                "Built as an IP router, the gateway uses Linux packet filtering for protecting agains attacks on the MT IPRS server.",
+                "It inspects packets, makes sure the packets are valid, and also maintains statistics to protect agains DoS attacks.",
+                "It also applies in-place heuristics to help reject messages, altering the packets so they would be re-routed to the sender as a 'denied' response.",
+                "Linux, C++, Net filtering, IP Gateway, UDP",
+                "",
+                {
+                    "text": "◃ PROJECTS",
+                    "target": "apps",
+                    "type": "link"
+                }
+            ]
+        },
+        {
+            "id": "secret-im",
+            "type": "screen",
+            "content": [
+                {
+                    "text" : "TOP SECRET IM",
+                    "type" : "text",
+                    "className" : "title"
+                },
+                "",
+                {
+                    "type": "bitmap",
+                    "src": "img/apps/secret.png",
+                    "className": "lighten"
+                },
+                "",
+                {
+                    "text": "◃ PROJECTS",
+                    "target": "apps",
+                    "type": "link"
+                },
+                "",
+                {
+                    "type": "text",
+                    "className": "alert",
+                    "text": "Currently in stealth mode, top secret."
+                },
+                "A new instant messenger with a unique set of features.",
+                "Designed and built this new project from scratch.",
+                "Implemented the Signal end to end encryption protocol.",
+                "iOS/Android/Web/Backend C/C++,Swift,Flutter,Typescript/NodeJS,PostgreSQL,AWS",
+                "",
+                {
+                    "text": "◃ PROJECTS",
                     "target": "apps",
                     "type": "link"
                 }
