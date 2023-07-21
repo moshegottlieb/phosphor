@@ -7,7 +7,7 @@ html, body {
     line-height: $lineheight;
     color: $foreground;
 
-    user-select: none;
+    user-select: text;
     text-shadow: $foreground-glow;
 
     height: 100%;
