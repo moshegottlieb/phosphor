@@ -117,13 +117,18 @@
                     "type": "link"
                 },
                 "",
-                "I've started Sharkfood in 2010, as a software development business.",
-                "Over the years I've been developing many interesting projects, some secret, some public :-)",
-                "Most of the projects are for iOS, but also:",
-                "Full solutions: iOS, web frontend, and Android, as well as custom C++ projects.",
-                "",
-                "From instant messaging using the Signal end to end encryption protocol, to retail apps.",
-                "Located in Berlin since 2019.",
+
+                "I started Sharkfood as a software development shop back in 2010.",
+                "Over the years, I've developed many interesting projects, some are publicly known, others are top secret :)",
+                "I've built retail apps, instant messaging using the Signal end-to-end encryption protocol, and more.",
+                "Whether it's iOS, Android, web Frontend, or custom C++ projects, I deliver on time and on budget.",
+                "I'm based in Berlin.",
+                "Check out my Linkedin, Github and Stackoverflow for more info.",
+                {
+                    "text": "▹ CONTACT",
+                    "type": "link",
+                    "target": "contact"
+                },
                 "",
                 {
                     "text": "◃ BACK",
